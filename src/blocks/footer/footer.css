@@ -1,0 +1,7 @@
+@import url('./text/footer__text.css');
+
+.footer{
+    justify-content: flex-end;
+    display: flex;
+
+}

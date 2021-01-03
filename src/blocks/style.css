@@ -1,0 +1,18 @@
+
+/* @import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css'); */
+@import url('./body/body.css');
+@import url('./header/header.css');
+@import url('./logo/logo.css');
+@import url('./search/search.css');
+@import url('./main/main.css');
+@import url('./general/general.css');
+@import url('./category/category.css');
+@import url('./favorites/favorites.css');
+@import url('./nav/nav.css');
+@import url('./card/card.css');
+@import url('./hidden/hidden.css');
+@import url('./link/link.css');
+@import url('./footer/footer.css');
+
+

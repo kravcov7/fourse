@@ -1,0 +1,7 @@
+@import url('./slider/general__slider.css');
+@import url('./title/general__title.css');
+@import url('./container/general__container.css');
+
+.general{
+    width: 940px;
+}

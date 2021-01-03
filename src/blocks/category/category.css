@@ -1,0 +1,9 @@
+@import url('./title/category__title.css');
+@import url('./title/category__title.css');
+@import url('./text/category__text.css');
+@import url('./list/category__list.css');
+@import url('./link/category__link.css');
+
+.category{
+    /* margin-top: 0; */
+}

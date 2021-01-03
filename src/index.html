@@ -5,9 +5,160 @@
       <title>Webpack</title>
       <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
-<body>
-      <h1>Hello</h1>
+<body class="body">
+      <header class="header">
+             <img src="<%=require('../src/images/лого бел v2.png').default %>" class="logo" alt="логотип" />
+             <form class="search">
+                    <input class="search__input" placeholder="Введите тему курса" required />
+                    <button class="search__loupe"><img src="<%=require('../src/images/loupe.png').default %>" alt="лупа"/></button>
+                    <!-- <img class="search__loupe" src="./images/loupe.png" /> -->
+             </form>
+             <ul class="header__user-menu ">
+                    <li class="link">
+                           <button class="header__button ">Юлия<img src="<%=require('../src/images/user.png').default %>" /></button>
+                           <ul class="header__button-menu ">
+                                  <li class="link"><a class="category__link" href="">Личный кабинет</a></li>
+                                  <li class="link"><a class="category__link" href="">Избранное</a></li>
+                                  <li class="link"><a class="category__link" href="">Настройки</a></li>
+                                  <li class="link"><a class="category__link" href="">Создать курс</a></li>
+                           </ul>
+                    </li>
+             </ul>
+      </header>
+
+      <main class="main">
+             <section class="category">
+                    <h2 class="category__title">Категории</h2>
+                    <nav class="nav">
+                           <ul class="category__list">
+                                  <li class="category__text">
+                                         <a class="category__link" href=""><img src="<%=require('../src/images/baby.png').default %>" /> Для детей и подростков</a>
+                                  </li>
+                                  <li class="category__text">
+                                         <a class="category__link" href=""><img src="<%=require('../src/images/beauty.png').default %>" /> Красота</a>
+                                  </li>
+                                  <li class="category__text">
+                                         <a class="category__link" href=""><img src="<%=require('../src/images/art.png').default %>" /> Искусство</a>
+                                         <ul class="category__sublist">
+                                                <li class="category__text"><a class="category__link" href="">Искусство11</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Искусство22</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Искусство33</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Искусство44</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Искусство55</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Искусство66</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Искусство77</a></li>
+                                         </ul>
+                                  </li>
+                                  <li class="category__text">
+                                         <a class="category__link" href=""><img src="<%=require('../src/images/science.png').default %>" /> Наука</a>
+                                         <ul class="category__sublist">
+                                                <li class="category__text"><a class="category__link" href="">Архитектура</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Биология</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Бухгалтерия</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Культорология</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Математика</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Медицина</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Педагогика</a></li>
+                                         </ul>
+                                  </li>
+                                  <li class="category__text">
+                                         <a class="category__link" href=""><img src="<%=require('../src/images/program.png').default %>" /> Программирование</a>
+                                  </li>
+                                  <li class="category__text">
+                                         <a class="category__link" href=""><img src="<%=require('../src/images/sev-dev.png').default %>" /> Саморазвитие</a>
+                                  </li>
+                                  <li class="category__text">
+                                         <a class="category__link" href=""><img src="<%=require('../src/images/sport.png').default %>" /> Спорт</a>
+                                  </li>
+                                  <li class="category__text">
+                                         <a class="category__link" href=""><img src="<%=require('../src/images/hobbies.png').default %>" /> Хобби</a>
+                                         <ul class="category__sublist">
+                                                <li class="category__text"><a class="category__link" href="">Кройка и шитье</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Флористика</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Вязание</a></li>
+                                                <li class="category__text"><a class="category__link" href="">Кулинария</a></li>
+                                         </ul>
+                                  </li>
+                                  <li class="category__text">
+                                         <a class="category__link" href=""><img src="<%=require('../src/images/lang.png').default %>" /> Языки</a>
+                                  </li>
+                                  <li class="category__text">
+                                         <a class="category__link" href=""><img src="<%=require('../src/images/18+.png').default %>" /> 18+</a>
+                                  </li>
+                           </ul>
+                    </nav>
+             </section>
+
+             <section class="general">
+                    <div class="general__main">
+                           <div class="general__slider"></div>
+                                     <h2 class="general__title">Лучшие курсы этой недели</h2>
+                    <div class="general__container">
+                           <div class="card">
+                                  <div class="card__item">
+                                         <img src="<%=require('../src/images/zast.jpg').default %>" class="card__image" alt="" />
+                                         <div class="card__icon card__icon_0"></div>
+                                         <div class="card__icon card__icon_1 hidden"></div>
+                                  </div>
+                                  <h3 class="card__title">"Let's cook!"</h3>
+                                  <p class="card__text">Готовьте с нами лучшую еду</p>
+                           </div>
+
+                           <div class="card">
+                                  <div class="card__item">
+                                         <img src="<%=require('../src/images/zast.jpg').default %>" class="card__image" alt="" />
+                                         <div class="card__icon card__icon_0"></div>
+                                         <div class="card__icon card__icon_1 hidden"></div>
+                                  </div>
+                                  <h3 class="card__title">"История Искусств"</h3>
+                                  <p class="card__text">После вы захотите ходить в музеи</p>
+                           </div>
+
+                           <div class="card">
+                                  <div class="card__item">
+                                         <img src="<%=require('../src/images/zast.jpg').default %>" class="card__image" alt="" />
+                                         <div class="card__icon card__icon_0 hidden"></div>
+                                         <div class="card__icon card__icon_1"></div>
+                                  </div>
+                                  <h3 class="card__title">"Меню в Indesilhh с нуля"</h3>
+                                  <p class="card__text">Фокусы на все случаи жизни</p>
+                           </div>
+
+                           <div class="card">
+                                  <div class="card__item">
+                                         <img src="<%=require('../src/images/zast.jpg').default %>" class="card__image" alt="" />
+                                         <div class="card__icon card__icon_0 hidden"></div>
+                                         <div class="card__icon card__icon_1"></div>
+                                  </div>
+                                  <h3 class="card__title">"Let's cook!"</h3>
+                                  <p class="card__text">Готовьте с нами лучшую еду</p>
+                           </div>
+
+                           <div class="card">
+                                  <div class="card__item">
+                                         <img src="<%=require('../src/images/zast.jpg').default %>" class="card__image" alt="" />
+                                         <div class="card__icon card__icon_0"></div>
+                                         <div class="card__icon card__icon_1 hidden"></div>
+                                  </div>
+                                  <h3 class="card__title">"Let's заголовок"</h3>
+                                  <p class="card__text">Готовьте с нами лучшую еду</p>
+                           </div>
+                    </div>
+
+                    </div>
+                    
+             </section>
+
+             <section class="favorites">
+                    <h2 class="favorites__title">Избранное</h2>
+                    <div class="favorites__image"></div>
+             </section>
+      </main>
+
+      <footer class="footer">
+             <a class="footer__text link">&#169 Studio "ИкрА"</a>
+      </footer>
       <script src="<%= htmlWebpackPlugin.files.js %>"></script>
-</body>
+</body>      
 </html>
   
