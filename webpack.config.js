@@ -21,16 +21,28 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use:  [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'] // добавили минификацию CSS
+        use:  [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader',] // добавили минификацию CSS
       },
       //настройка плагина image-webpack-loader
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
-          "file-loader?name=./images/[name].[ext]",
+          {
+            loader: 'file-loader',
+            options: {
+              esModule: false,
+              name: 'images/[name].[ext]',
+              publicPath: '../',
+            }
+          },
+          // {"file-loader?name=./images/[name].[ext]",
+          // options: {
+          //   publicPath: '../'
+          // }}
           {
             loader: "image-webpack-loader",
             options: {
+              
               mozjpeg: {
                 progressive: true,
               },
