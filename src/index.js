@@ -14,3 +14,4 @@ require("./images/hobbies.png");
 require("./images/lang.png");
 require("./images/18+.png");
 require("./images/zast.jpg");
+require("./images/popup-close-white.svg");

@@ -153,6 +153,71 @@
       </section>
     </main>
 
+    <!-- ---------- попап входа -------- -->
+    <div class="popup hidden" id="loginPopup">
+      <div class="popup__content">
+        <img src='./images/popup-close-white.svg' alt="Иконка закрытия окна" class="popup__close" />
+        <h3 class="popup__title">Вход</h3>
+        <form class="popup__form" id="login-form" novalidate>
+          <div class="popup__input-container">
+            <p class="popup__input-name">Email</p>
+            <input type="email" id="mail" class="popup__input" placeholder="Введите почту" required />
+            <span class="popup__error-message" id="error-mail">Неправильный формат email</span>
+          </div>
+          <div class="popup__input-container">
+            <p class="popup__input-name">Пароль</p>
+            <input type="text" id="password" class="popup__input" placeholder="Введите пароль" required />
+            <span class="popup__error-message" id="error-password"></span>
+          </div>
+          <p class="popup__error-message popup__error-message_centred">Неверный логин или пароль</p>
+          <button type="submit" class="popup__button button" disabled="disabled">Войти</button>
+        </form>
+        <div class="popup__text-container">
+          <p class="popup__text">или</p>
+          <a class="popup__link" id="registerButton">Зарегистрироваться</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ------ попап регистрации ------  -->
+    <div class="popup hidden " id="registerPopup">
+      <div class="popup__content">
+        <img src='./images/popup-close-white.svg' alt="Иконка закрытия окна" class="popup__close" />
+        <h3 class="popup__title">Регистрация</h3>
+        <form class="popup__form" id="register-form" novalidate>
+          <div class="popup__input-container">
+            <p class="popup__input-name">Email</p>
+            <input id="user-mail" type="email" class="popup__input" placeholder="Введите почту" required />
+            <span class="popup__error-message" id="error-user-mail">Неправильный формат email</span>
+          </div>
+          <div class="popup__input-container">
+            <p class="popup__input-name">Пароль</p>
+            <input id="user-password" type="text" minlength="2" class="popup__input" placeholder="Введите пароль" required />
+            <span class="popup__error-message" id="error-user-password"></span>
+          </div>
+          <div class="popup__input-container">
+            <p class="popup__input-name">Имя</p>
+            <input id="user-name" type="text" class="popup__input" placeholder="Введите пароль" required />
+            <span class="popup__error-message" id="error-user-name"></span>
+          </div>
+          <p class="popup__error-message popup__error-message_centred">Такой пользователь уже есть</p>
+          <button type="submit" class="popup__button button" disabled="disabled">Зарегистрироваться</button>
+        </form>
+        <div class="popup__text-container">
+          <p class="popup__text">или</p>
+          <a class="popup__link" id="loginButton">Войти</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup  hidden" id="messagePopup">
+      <div class="popup__content">
+        <img src='./images/popup-close-white.svg' alt="Иконка закрытия окна" class="popup__close" />
+        <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+        <a class="popup__link" id="messagePopupLoginButton">Войти</a>
+      </div>
+    </div>
+
     <footer class="footer">
       <p><a href="" class="footer__text link"> &copy; Studio "ИкрА"</a></p>
     </footer>
