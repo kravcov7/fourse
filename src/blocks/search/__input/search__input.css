@@ -10,4 +10,5 @@
   outline: none; /* Убираем свечение в Chrome и Safari */
   -webkit-appearance: none;
   padding-left: 10px;
+  font-size: 20px;
 }

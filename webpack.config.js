@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // добави
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-  entry: { main: './src/index.js' },
+  entry: { main: './src/js/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: './script/[name].[chunkhash].js'
@@ -16,8 +16,15 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
-        }
+          loader: "babel-loader",
+          options: {
+            plugins: ['transform-class-properties']
+          }
+        },
+      },
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        loader: "file-loader?name=./vendor/[name].[ext]",
       },
       {
         test: /\.css$/,
