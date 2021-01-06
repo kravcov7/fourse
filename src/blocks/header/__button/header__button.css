@@ -1,0 +1,11 @@
+.header__button {
+  justify-content: space-between;
+  display: inline-flex;
+  width: 203px;
+  border: none;
+  background-color: transparent;
+  align-items: center;
+  font-family: "Roboto", Arial, sans-serif;
+  position: relative;
+  cursor: pointer;
+}

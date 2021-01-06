@@ -14,14 +14,17 @@
         <!-- <img class="search__loupe" src="./images/loupe.png" /> -->
       </form>
       <ul class="header__user-menu">
-        <li class="link">
-          <button class="header__button">Юлия<img src="./images/user.png" /></button>
+        <li class="header__item hidden">
+          <button class="button header__button">Юлия<img src="./images/user.png" /></button>
           <ul class="header__button-menu">
-            <li class="link"><a class="category__link" href="">Личный кабинет</a></li>
-            <li class="link"><a class="category__link" href="">Избранное</a></li>
-            <li class="link"><a class="category__link" href="">Настройки</a></li>
-            <li class="link"><a class="category__link" href="">Создать курс</a></li>
+            <li class="header__item"><a class="category__link" href="">Личный кабинет</a></li>
+            <li class="header__item link"><a class="category__link" href="">Избранное</a></li>
+            <li class="header__item link"><a class="category__link" href="">Настройки</a></li>
+            <li class="header__item link"><a class="category__link" href="">Создать курс</a></li>
           </ul>
+        </li>
+        <li class="header__item" id="login-button-header">
+          <button class="button header__button">Авторизоваться</button>
         </li>
       </ul>
     </header>
