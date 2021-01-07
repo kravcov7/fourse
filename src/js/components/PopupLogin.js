@@ -9,5 +9,9 @@ export class PopupLogin extends Popup {
     super.open();
   }
 
+  close = () => {
+    super.close();
+  }
+
   
 }
