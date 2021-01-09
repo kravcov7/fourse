@@ -25,18 +25,32 @@ import { PopupMessage } from './components/PopupMessage';
 import { MainApi } from './api/MainApi';
 import { Header } from './components/Header';
 import { FormValidator } from './components/FormValidator';
+import { errorMessages } from "./constants/errorMessages";
+import Popup from "./components/Popup";
 
 
 
 const mainApi = new MainApi(mainApiServer);
 const header = new Header(mainApi);
-const formValidator = (...arg) => new FormValidator(...arg);
+// const formValidator = (...arg) => new FormValidator(...arg);
 const popupMessage = new PopupMessage(messagePopup);
-const popupRegister = new PopupRegister(registerPopup, mainApi, popupMessage, formValidator);
-const popupLogin = new PopupLogin(loginPopup, mainApi, header, formValidator);
+const popupRegister = new PopupRegister(registerPopup, mainApi, popupMessage);
+const popupLogin = new PopupLogin(loginPopup, mainApi, header);
+const validateLogin = new FormValidator(loginPopup, errorMessages);
+const validate = new FormValidator(registerPopup, errorMessages);
+
 
 loginButtonHeader.addEventListener('click', () => popupLogin.open());
 registerButton.addEventListener('click', () => {
   popupLogin.close();
   popupRegister.open();
-})
+});
+loginButton.addEventListener('click', () => {
+  popupRegister.close();
+  popupLogin.open();
+});
+
+messagePopupLoginButton.addEventListener('click', () => {
+  popupMessage.close();
+  popupLogin.open();
+});
