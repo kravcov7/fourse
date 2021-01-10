@@ -1,4 +1,6 @@
-.general__container{
-    display: flex;
-    justify-content: space-between;
+.general__container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-column-gap: 6px;
+  grid-row-gap: 16px;
 }
