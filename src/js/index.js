@@ -15,8 +15,11 @@ require("../images/sport.png");
 require("../images/hobbies.png");
 require("../images/lang.png");
 require("../images/18+.png");
+require("../images/lk2.png");
 require("../images/zast.jpg");
 require("../images/yag.jpg");
+require("../images/logo2.jpg");
+require("../images/jul.jpg");
 require("../images/popup-close-white.svg");
 
 import { PopupLogin } from './components/PopupLogin';

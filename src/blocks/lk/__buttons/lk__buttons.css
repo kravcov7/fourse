@@ -1,0 +1,15 @@
+.lk__buttons{
+  width: 200px;
+  /* display: flex; */
+}
+
+.lk__password, .lk__help{
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  height: 30px;
+  margin-bottom: 40px;
+  padding-top: 5px;
+  color: rgba(0, 0, 0, 0.53);
+  
+}

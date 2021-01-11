@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Webpack</title>
+    <title>Fourse</title>
+    <link rel="icon" href="./images/logo2.jpg" />
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>" />
   </head>
   <body class="body">
@@ -31,7 +32,7 @@
 
     <main class="main">
       <section class="category">
-        <h2 class="category__title">Категории</h2>
+        <h2 class="category__title title">Категории</h2>
         <nav class="nav">
           <ul class="category__list">
             <li class="category__text">
@@ -93,7 +94,7 @@
       </section>
 
       <section class="general">
-        <div class="general__main">
+        <div class="general__main hidden">
           <div class="general__slider"></div>
           <h2 class="general__title">Лучшие курсы этой недели</h2>
           <div class="general__container">
@@ -148,7 +149,7 @@
             </div>
           </div>
         </div>
-        <div class="general__favorites">
+        <div class="general__favorites hidden">
           <h2 class="general__title">Лучшее из этой категории</h2>
           <div class="general__container">
             <div class="card">
@@ -300,8 +301,28 @@
             </div>
           </div>
         </div>
-        <div class="general__lk">
 
+        <div class="general__lk">
+          <div class="lk">
+            <div class="lk__top">
+              <img src="./images/lk2.png" alt="" class="lk__image" />
+              <h2 class="lk__title title">Личный кабинет</h2>
+            </div>
+
+            <div class="lk__main">
+              <div class="lk__info">
+                <img src="./images/jul.jpg" class="lk__photo" alt="фото пользователя" />
+                <div class="lk__content">
+                  <h3 class="lk__name title">Юлия</h3>
+                  <p class="lk__email">julia2000@gmail.com</p>
+                </div>
+              </div>
+              <div class="lk__buttons">
+                <button class="lk__password button">Сменить пароль</button>
+                <button class="lk__help button">Помощь</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -314,7 +335,7 @@
     <!-- ---------- попап входа -------- -->
     <div class="popup hidden" id="loginPopup">
       <div class="popup__content">
-        <img src='./images/popup-close-white.svg' alt="Иконка закрытия окна" class="popup__close" />
+        <img src="./images/popup-close-white.svg" alt="Иконка закрытия окна" class="popup__close" />
         <h3 class="popup__title">Вход</h3>
         <form class="popup__form" id="login-form" novalidate>
           <div class="popup__input-container">
@@ -336,11 +357,11 @@
         </div>
       </div>
     </div>
-    
+
     <!-- ------ попап регистрации ------  -->
-    <div class="popup hidden " id="registerPopup">
+    <div class="popup hidden" id="registerPopup">
       <div class="popup__content">
-        <img src='./images/popup-close-white.svg' alt="Иконка закрытия окна" class="popup__close" />
+        <img src="./images/popup-close-white.svg" alt="Иконка закрытия окна" class="popup__close" />
         <h3 class="popup__title">Регистрация</h3>
         <form class="popup__form" id="register-form" novalidate>
           <div class="popup__input-container">
@@ -368,9 +389,9 @@
       </div>
     </div>
 
-    <div class="popup  hidden" id="messagePopup">
+    <div class="popup hidden" id="messagePopup">
       <div class="popup__content">
-        <img src='./images/popup-close-white.svg' alt="Иконка закрытия окна" class="popup__close" />
+        <img src="./images/popup-close-white.svg" alt="Иконка закрытия окна" class="popup__close" />
         <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
         <a class="popup__link" id="messagePopupLoginButton">Войти</a>
       </div>
