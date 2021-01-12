@@ -1,5 +1,5 @@
 import "../blocks/style.css";
-import { loginPopup, messagePopup, registerPopup, loginButton, registerButton, loginButtonHeader, resultContainer, cardTemplate, searchForm, searchWord, resultMoreButton, messagePopupLoginButton, headerIcon } from './constants/constants'
+import { lk, loginPopup, messagePopup, registerPopup, loginButton, registerButton, loginButtonHeader, resultContainer, cardTemplate, searchForm, searchWord, resultMoreButton, messagePopupLoginButton, headerIcon } from './constants/constants'
 import { newsApiServer, mainApiServer } from './config/config';
 
 require("../images/лого бел v2.png");
@@ -31,13 +31,6 @@ require("../images/yag.jpg");
 require("../images/logo2.jpg");
 require("../images/jul.jpg");
 require("../images/f1.svg");
-require("../images/f2.svg");
-require("../images/f3.svg");
-require("../images/f4.svg");
-require("../images/f5.svg");
-require("../images/f6.svg");
-require("../images/f7.svg");
-require("../images/f8.svg");
 require("../images/popup-close-white.svg");
 
 import { PopupLogin } from './components/PopupLogin';
@@ -47,6 +40,7 @@ import { MainApi } from './api/MainApi';
 import { Header } from './components/Header';
 import { FormValidator } from './components/FormValidator';
 import { errorMessages } from "./constants/errorMessages";
+import { Lk } from "./components/Lk";
 import Popup from "./components/Popup";
 
 
@@ -70,8 +64,8 @@ loginButton.addEventListener('click', () => {
   popupRegister.close();
   popupLogin.open();
 });
-
 messagePopupLoginButton.addEventListener('click', () => {
   popupMessage.close();
   popupLogin.open();
 });
+lk.addEventListener('click', console.log('ccc'))

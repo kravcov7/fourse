@@ -15,16 +15,16 @@
         <!-- <img class="search__loupe" src="./images/loupe.png" /> -->
       </form>
       <ul class="header__user-menu">
-        <li class="header__item hidden">
+        <li class="header__item header__item_name">
           <button class="button header__button">Юлия<img src="./images/user.png" /></button>
           <ul class="header__button-menu">
-            <li class="header__item"><a class="category__link" href="">Личный кабинет</a></li>
+            <li class="header__item" id="lk"><a class="category__link" href="">Личный кабинет</a></li>
             <li class="header__item link"><a class="category__link" href="">Избранное</a></li>
             <li class="header__item link"><a class="category__link" href="">Настройки</a></li>
             <li class="header__item link"><a class="category__link" href="">Создать курс</a></li>
           </ul>
         </li>
-        <li class="header__item" id="login-button-header">
+        <li class="header__item header__item_auth hidden" id="login-button-header">
           <button class="button header__button">Авторизоваться</button>
         </li>
       </ul>
@@ -149,6 +149,7 @@
             </div>
           </div>
         </div>
+
         <div class="general__favorites ">
           <h2 class="general__title"><img src="./images/sci.png" class="general__icon" alt="" />Лучшее из этой категории</h2>
           <div class="general__container">

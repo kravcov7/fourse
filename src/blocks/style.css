@@ -1,6 +1,7 @@
 
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts.css'); 
+@import url('./button/button.css');
 @import url('./title/title.css');
 @import url('./body/body.css');
 @import url('./header/header.css');
@@ -16,7 +17,5 @@
 @import url('./link/link.css');
 @import url('./footer/footer.css');
 @import url('./popup/popup.css');
-@import url('./button/button.css');
 @import url('./lk/lk.css');
-
 
