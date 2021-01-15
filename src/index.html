@@ -18,9 +18,9 @@
         <li class="header__item header__item_name">
           <button class="button header__button">Юлия<img src="./images/user.png" /></button>
           <ul class="header__button-menu">
-            <li class="header__item" id="lk"><a class="category__link" href="">Личный кабинет</a></li>
-            <li class="header__item link"><a class="category__link" href="">Избранное</a></li>
-            <li class="header__item link"><a class="category__link" href="">Настройки</a></li>
+            <li class="header__item" id="lkButton"><a class="category__link" href="">Личный кабинет</a></li>
+            <li class="header__item link" id="mainButton"><a class="category__link" href="">Главная</a></li>
+            <li class="header__item link" id="favoritesButton"><a class="category__link" href="">Избранное</a></li>
             <li class="header__item link"><a class="category__link" href="">Создать курс</a></li>
           </ul>
         </li>
@@ -94,11 +94,24 @@
       </section>
 
       <section class="general">
-        <div class="general__main ">
+        <div class="general__main " id="generalMain">
           <div class="general__slider"></div>
           <h2 class="general__title">Лучшие курсы этой недели</h2>
           <div class="general__container">
-            <div class="card">
+
+            <template id="card-template">
+              <a href="" target="_blank" class="card card__link">
+                <div class="card__item">
+                  <img src="./images/yag.jpg" class="card__image" alt="" />
+                  <div class="card__icon card__icon_0"></div>
+                  <div class="card__icon card__icon_1 hidden"></div>
+                </div>
+                <h3 class="card__title">"Let's cook!"</h3>
+                <p class="card__text">Готовьте с нами лучшую еду</p>
+              </a>
+            </template>
+            
+            <a href="" target="_blank" class="card card__link">
               <div class="card__item">
                 <img src="./images/yag.jpg" class="card__image" alt="" />
                 <div class="card__icon card__icon_0"></div>
@@ -106,7 +119,7 @@
               </div>
               <h3 class="card__title">"Let's cook!"</h3>
               <p class="card__text">Готовьте с нами лучшую еду</p>
-            </div>
+            </a>
 
             <div class="card">
               <div class="card__item">
@@ -150,7 +163,7 @@
           </div>
         </div>
 
-        <div class="general__favorites ">
+        <div class="general__favorites hidden" id="generalFavorites">
           <h2 class="general__title"><img src="./images/sci.png" class="general__icon" alt="" />Лучшее из этой категории</h2>
           <div class="general__container">
             <div class="card">
@@ -303,7 +316,7 @@
           </div>
         </div>
 
-        <div class="general__lk">
+        <div class="general__lk hidden" id="generalLk">
           <div class="lk">
             <div class="lk__top">
               <img src="./images/lk2.png" alt="" class="lk__image" />

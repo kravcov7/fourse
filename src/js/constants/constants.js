@@ -10,7 +10,12 @@ export const loginPopup = document.querySelector('#loginPopup');
 export const registerPopup = document.querySelector('#registerPopup');
 export const messagePopup = document.querySelector('#messagePopup');
 
-export const lk = document.querySelector('#lk');
+export const lkButton = document.querySelector('#lkButton');
+export const mainButton = document.querySelector('#mainButton');
+export const favoritesButton = document.querySelector('#favoritesButton');
+export const generalMain = document.querySelector('#generalMain');
+export const generalFavorites = document.querySelector('#generalFavorites');
+export const generalLk = document.querySelector('#generalLk');
 
 export const searchForm = document.querySelector('.cower__search');
 export const searchWord = document.querySelector('.cower__input');

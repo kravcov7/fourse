@@ -68,4 +68,21 @@ messagePopupLoginButton.addEventListener('click', () => {
   popupMessage.close();
   popupLogin.open();
 });
-lk.addEventListener('click', console.log('ccc'))
+lkButton.addEventListener('click', () => {
+  event.preventDefault();
+  generalMain.classList.add('hidden');
+  generalFavorites.classList.add('hidden');
+  generalLk.classList.remove('hidden');
+});
+mainButton.addEventListener('click', () => {
+  event.preventDefault();
+  generalFavorites.classList.add('hidden');
+  generalLk.classList.add('hidden');
+  generalMain.classList.remove('hidden');
+});
+favoritesButton.addEventListener('click', () => {
+  event.preventDefault();
+  generalFavorites.classList.remove('hidden');
+  generalLk.classList.add('hidden');
+  generalMain.classList.add('hidden');
+});
