@@ -19,3 +19,5 @@ export const generalLk = document.querySelector('#generalLk');
 
 export const searchForm = document.querySelector('.cower__search');
 export const searchWord = document.querySelector('.cower__input');
+
+export const cardTemplate = document.querySelector('#card-template').content.querySelector('.card');
